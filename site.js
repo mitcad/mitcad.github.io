@@ -42,13 +42,6 @@
       .catch(function () { /* keep the fallback links */ });
   }
 
-  // Screenshots: shown only when the files are there.
-  var shot = document.getElementById("shot-main");
-  if (shot && shot.dataset.src) {
-    shot.onload = function () { document.getElementById("showcase").hidden = false; };
-    shot.src = shot.dataset.src;
-  }
-
   // Close the mobile menu after a jump.
   var menu = document.getElementById("menu");
   document.querySelectorAll(".links a").forEach(function (a) {
