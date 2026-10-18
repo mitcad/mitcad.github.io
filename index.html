@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- SPDX-License-Identifier: MIT -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mitcad – open-source parametric CAD</title>
+  <meta name="description" content="Mitcad is an open-source parametric desktop CAD application for Windows, Linux and macOS. Sketches, features on a timeline, assemblies, sheet metal and many file formats. MIT licensed.">
+  <meta name="theme-color" content="#070b12">
+  <meta property="og:title" content="Mitcad – open-source parametric CAD">
+  <meta property="og:description" content="Parametric desktop CAD for Windows, Linux and macOS. Free under the MIT licence.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mitcad.org/">
+  <meta property="og:image" content="https://mitcad.org/assets/og.png">
+  <link rel="canonical" href="https://mitcad.org/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Mitcad home">
+        <img src="assets/logo.svg" alt="" width="32" height="32">
+        <span>Mitcad</span>
+      </a>
+      <input type="checkbox" id="menu" class="menu-toggle" aria-label="Menu">
+      <label for="menu" class="menu-button" aria-hidden="true"><span></span></label>
+      <nav class="links" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#formats">Formats</a>
+        <a href="#download">Download</a>
+        <a href="https://github.com/mitcad/Mitcad/blob/main/docs/user-guide.md">Docs</a>
+        <a class="gh" href="https://github.com/mitcad/Mitcad" aria-label="Mitcad on GitHub">
+          <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow"><span class="dot"></span> Open source · MIT licence</p>
+          <h1>Parametric CAD,<br><span class="grad">free for everyone.</span></h1>
+          <p class="lead">Mitcad is a desktop CAD application for Windows, Linux and macOS.
+            Sketch with constraints, build features on a timeline, assemble
+            components with joints – and change any dimension later.</p>
+          <div class="cta">
+            <a class="btn primary" href="#download">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Download
+            </a>
+            <a class="btn ghost" href="https://github.com/mitcad/Mitcad">View the source</a>
+          </div>
+          <ul class="platforms" aria-label="Platforms">
+            <li>Windows</li><li>Linux</li><li>macOS</li>
+          </ul>
+        </div>
+
+        <figure class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 520 440" class="blueprint">
+            <defs>
+              <linearGradient id="top" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#cfe6ff"/><stop offset="1" stop-color="#8cc6fa"/>
+              </linearGradient>
+              <linearGradient id="lft" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#4a9af0"/><stop offset="1" stop-color="#2a6fd0"/>
+              </linearGradient>
+              <linearGradient id="rgt" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#1f5fc4"/><stop offset="1" stop-color="#123f8a"/>
+              </linearGradient>
+              <radialGradient id="glow" cx="50%" cy="55%" r="50%">
+                <stop offset="0" stop-color="#3b8bea" stop-opacity=".35"/><stop offset="1" stop-color="#3b8bea" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <ellipse cx="260" cy="250" rx="250" ry="180" fill="url(#glow)"/>
+            <!-- Construction lines -->
+            <g class="construct">
+              <line x1="20" y1="300" x2="500" y2="300"/>
+              <line x1="260" y1="20" x2="260" y2="420"/>
+              <line x1="60" y1="415" x2="460" y2="185"/>
+              <line x1="60" y1="185" x2="460" y2="415"/>
+            </g>
+            <!-- An isometric block with a bore: top, left and right faces -->
+            <g class="solid">
+              <polygon points="260,120 400,200 260,280 120,200" fill="url(#top)"/>
+              <polygon points="120,200 260,280 260,360 120,280" fill="url(#lft)"/>
+              <polygon points="260,280 400,200 400,280 260,360" fill="url(#rgt)"/>
+              <clipPath id="bore"><ellipse cx="260" cy="200" rx="52" ry="30"/></clipPath>
+              <ellipse cx="260" cy="200" rx="52" ry="30" fill="#2a64b8"/>
+              <ellipse cx="260" cy="222" rx="52" ry="30" fill="#0a1424" clip-path="url(#bore)"/>
+            </g>
+            <!-- Edges drawn in -->
+            <g class="edges">
+              <path d="M260 120 L400 200 L260 280 L120 200 Z"/>
+              <path d="M120 200 V280 L260 360 L400 280 V200"/>
+              <path d="M260 280 V360"/>
+              <ellipse cx="260" cy="200" rx="52" ry="30"/>
+            </g>
+            <!-- Dimensions -->
+            <g class="dims">
+              <path d="M112 214 L112 294" /><path d="M106 214 h12 M106 294 h12"/>
+              <text x="98" y="258" text-anchor="end">40</text>
+              <path d="M276 372 L408 296"/><path d="M272 366 l8 12 M404 290 l8 12"/>
+              <text x="356" y="356">120</text>
+              <path d="M312 170 L352 140"/><text x="356" y="136">⌀ 52</text>
+            </g>
+            <!-- Sketch points -->
+            <g class="pts">
+              <circle cx="260" cy="120" r="4"/><circle cx="400" cy="200" r="4"/>
+              <circle cx="120" cy="200" r="4"/><circle cx="260" cy="280" r="4"/>
+              <circle cx="260" cy="200" r="3"/>
+            </g>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <section class="showcase" id="showcase" hidden>
+      <div class="wrap">
+        <div class="window">
+          <div class="window-bar"><i></i><i></i><i></i></div>
+          <img id="shot-main" data-src="" alt="The Mitcad window with a part, the model browser and the timeline" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">Features</p>
+          <h2>Everything a part needs, from the first sketch.</h2>
+          <p>Design intent stays in the model: every feature remembers how it was made,
+            so a change ripples through the whole design.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 18h6M4 18V8l6-4 6 4v4"/><circle cx="17" cy="17" r="4"/><path d="M17 15v2l1.5 1"/></svg></div>
+            <h3>Parametric history</h3>
+            <p>Features on a timeline and parameters with expressions. Edit a sketch or a dimension and the model rebuilds.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h-2M9 4V2M20 15h2M15 20v2"/><circle cx="9" cy="15" r="3"/></svg></div>
+            <h3>Constrained sketches</h3>
+            <p>Lines, arcs, splines and text with geometric constraints and driving dimensions, solved live as you draw.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="12" width="8" height="8" rx="1"/><rect x="13" y="4" width="8" height="8" rx="1"/><path d="M11 16h3a3 3 0 003-3v-1"/><circle cx="17" cy="12" r="1.2"/></svg></div>
+            <h3>Assemblies and joints</h3>
+            <p>Components with joints that move them, interference and analysis tools, and a component library with a part picker.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 8l6-3 6 3 6-3v11l-6 3-6-3-6 3z"/><path d="M9 5v11M15 8v11"/></svg></div>
+            <h3>Sheet metal</h3>
+            <p>Folded parts with flanges, cuts and reliefs; unfold, refold and a flat pattern exported to DXF.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg></div>
+            <h3>Rendered view</h3>
+            <p>Path-traced images with Cycles on the CPU, CUDA on NVIDIA GPUs or Metal on macOS, with appearances and environments.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="9" r="2.5"/><path d="M6 8.5v7M18 11.5c0 4-6 3-10.5 5.2"/></svg></div>
+            <h3>Version history</h3>
+            <p>Projects keep their versions in git: go back to any earlier version and share projects through a git host.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M6 20h12M8 20v-4h8v4M7 16l1-8h8l1 8"/><path d="M10 8V4h4v4"/></svg></div>
+            <h3>3D printing</h3>
+            <p>Send bodies straight to Bambu Studio, OrcaSlicer, PrusaSlicer or UltiMaker Cura, or export 3MF and STL.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4M7 10l2 2-2 2M12 14h4"/></svg></div>
+            <h3>Scriptable</h3>
+            <p>A JSON command API, a command line tool and a Model Context Protocol server that lets AI agents build models.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="formats">
+      <div class="wrap formats-grid">
+        <header class="section-head left">
+          <p class="kicker">Formats</p>
+          <h2>Bring your designs with you.</h2>
+          <p>FreeCAD and <code>.f3d</code> designs open with their history – features, sketches
+            and parameters – so they stay editable. Parts, building models and the
+            common exchange formats import and export too.</p>
+          <a class="text-link" href="https://github.com/mitcad/Mitcad#support-for-multiple-cad-formats">The full format table →</a>
+        </header>
+
+        <div class="format-table" role="table" aria-label="File formats">
+          <div class="row head" role="row"><span role="columnheader">Format</span><span role="columnheader">Import</span><span role="columnheader">Export</span></div>
+          <div class="row" role="row"><span role="cell"><b>FreeCAD</b> .FCStd</span><span role="cell" class="tag hist">with history</span><span role="cell" class="no">–</span></div>
+          <div class="row" role="row"><span role="cell"><b>.f3d</b> .f3z</span><span role="cell" class="tag hist">with history</span><span role="cell" class="no">–</span></div>
+          <div class="row" role="row"><span role="cell"><b>.ipt</b> parts</span><span role="cell" class="tag">bodies</span><span role="cell" class="no">–</span></div>
+          <div class="row" role="row"><span role="cell"><b>IFC</b> .ifc .ifczip</span><span role="cell" class="tag hist">storeys, elements</span><span role="cell" class="no">–</span></div>
+          <div class="row" role="row"><span role="cell"><b>STEP</b> · <b>IGES</b> · <b>BRep</b></span><span role="cell" class="tag">bodies</span><span role="cell" class="tag">bodies</span></div>
+          <div class="row" role="row"><span role="cell"><b>STL</b> · <b>OBJ</b></span><span role="cell" class="tag">meshes</span><span role="cell" class="tag">meshes</span></div>
+          <div class="row" role="row"><span role="cell"><b>DXF</b></span><span role="cell" class="tag">into a sketch</span><span role="cell" class="tag">from a sketch</span></div>
+          <div class="row" role="row"><span role="cell"><b>3MF</b> · <b>USDZ</b></span><span role="cell" class="no">–</span><span role="cell" class="tag">slicers, AR</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="wrap why">
+        <div class="why-mark" aria-hidden="true"><img src="assets/logo.svg" alt="" width="120" height="120"></div>
+        <div>
+          <p class="kicker">Why Mitcad</p>
+          <h2>Easy to use. Open to everyone. At home on Linux.</h2>
+          <p>Mitcad was started because the world still lacked a CAD application that is easy
+            to use, imports a wide range of file formats and runs on Linux as well. It is
+            free to use, change and share under the MIT licence – for hobby projects and
+            commercial work alike.</p>
+          <ul class="facts">
+            <li><b>C++17 &amp; Rust</b><span>Qt 6 interface, Open CASCADE geometry, a Rust model and solver</span></li>
+            <li><b>Signed updates</b><span>Checks once a day and offers to install a new release</span></li>
+            <li><b>No account</b><span>Your designs stay on your machine or in your own git repository</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="download">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">Download</p>
+          <h2>Get Mitcad <span id="latest-version"></span></h2>
+          <p>Free, with no account and no time limit. Mitcad is under active development:
+            new releases arrive often and the application offers them automatically.</p>
+        </header>
+
+        <div class="downloads">
+          <a class="dl" id="dl-windows" href="https://github.com/mitcad/Mitcad/releases/latest">
+            <svg viewBox="0 0 24 24" class="os"><path d="M3 5.5l7.5-1v7H3zM11.5 4.3L21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zM11.5 12.5H21V21l-9.5-1.3z"/></svg>
+            <h3>Windows</h3>
+            <p class="meta">Installer or zip · 64-bit</p>
+            <span class="file" data-default="Latest release">Latest release</span>
+          </a>
+          <a class="dl" id="dl-linux" href="https://github.com/mitcad/Mitcad/releases">
+            <svg viewBox="0 0 24 24" class="os"><path d="M12 2.5c-2.3 0-3.6 1.9-3.6 4.4 0 1.3.2 2.2-.6 3.5-1 1.5-2.6 3.5-2.6 6 0 .8.2 1.4.5 1.9-.7.3-1.4.8-1.4 1.5 0 1.2 2 1.2 3.3 1.7.8.3 1.4.5 2 .1.6-.3 1.5-.4 2.4-.4s1.8.1 2.4.4c.6.4 1.2.2 2-.1 1.3-.5 3.3-.5 3.3-1.7 0-.7-.7-1.2-1.4-1.5.3-.5.5-1.1.5-1.9 0-2.5-1.6-4.5-2.6-6-.8-1.3-.6-2.2-.6-3.5 0-2.5-1.3-4.4-3.6-4.4z"/></svg>
+            <h3>Linux</h3>
+            <p class="meta">AppImage · x86-64 · runs on most distributions</p>
+            <span class="file" data-default="All releases">All releases</span>
+          </a>
+          <a class="dl" id="dl-macos" href="https://github.com/mitcad/Mitcad#macos">
+            <svg viewBox="0 0 24 24" class="os"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8s-1.9-.8-3.1-.8C6.8 7.3 5.3 8.2 4.5 9.6c-1.7 2.9-.4 7.3 1.2 9.7.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8s1.9.8 3.1.8c1.3 0 2.1-1.2 2.9-2.4.9-1.3 1.3-2.6 1.3-2.7 0 0-2.6-1-2.7-4zM14.1 5.5c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3z"/></svg>
+            <h3>macOS</h3>
+            <p class="meta">Apple Silicon · macOS 14.4 or newer</p>
+            <span class="file" data-default="Build from source">Build from source</span>
+          </a>
+        </div>
+        <p class="small center">Every release, its notes and checksums: <a href="https://github.com/mitcad/Mitcad/releases">GitHub releases</a>.
+          Building it yourself: <a href="https://github.com/mitcad/Mitcad#building">the build guide</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="community">
+      <div class="wrap community">
+        <div>
+          <h2>Built in the open.</h2>
+          <p>Report a file that does not import as it should, ask for a feature or send a
+            pull request – AI-assisted contributions are welcome too.</p>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/mitcad/Mitcad/issues">Open an issue</a>
+          <a class="btn ghost" href="https://github.com/mitcad/Mitcad/blob/main/docs/development.md">Developer guide</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="#top"><img src="assets/logo.svg" alt="" width="24" height="24"><span>Mitcad</span></a>
+      <nav aria-label="Footer">
+        <a href="https://github.com/mitcad/Mitcad">Source</a>
+        <a href="https://github.com/mitcad/Mitcad/blob/main/docs/user-guide.md">User guide</a>
+        <a href="https://github.com/mitcad/Mitcad/releases">Releases</a>
+        <a href="https://github.com/mitcad/Mitcad/blob/main/LICENSE">MIT licence</a>
+      </nav>
+      <p class="small">© 2026 Mitcad developers. Released under the MIT licence.</p>
+    </div>
+  </footer>
+
+  <script src="site.js" defer></script>
+</body>
+</html>

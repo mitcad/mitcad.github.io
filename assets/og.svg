@@ -1,0 +1,68 @@
+<!-- SPDX-License-Identifier: MIT -->
+<!-- Link preview image (1200x630); og.png is made from it:
+     rsvg-convert -w 1200 -h 630 og.svg -o og.png (in this folder). -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#8cc6fa" stroke-opacity=".1"/>
+    </pattern>
+    <radialGradient id="g1" cx="85%" cy="0%" r="70%">
+      <stop offset="0" stop-color="#1f6fe0" stop-opacity=".45"/><stop offset="1" stop-color="#1f6fe0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="55%" r="50%">
+      <stop offset="0" stop-color="#3b8bea" stop-opacity=".35"/><stop offset="1" stop-color="#3b8bea" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cfe6ff"/><stop offset="1" stop-color="#8cc6fa"/>
+    </linearGradient>
+    <linearGradient id="lft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a9af0"/><stop offset="1" stop-color="#2a6fd0"/>
+    </linearGradient>
+    <linearGradient id="rgt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f5fc4"/><stop offset="1" stop-color="#123f8a"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8cc6fa"/><stop offset="1" stop-color="#4a9af0"/>
+    </linearGradient>
+    <clipPath id="bore"><ellipse cx="260" cy="200" rx="52" ry="30"/></clipPath>
+  </defs>
+  <rect width="1200" height="630" fill="#070b12"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+
+  <image xlink:href="logo.svg" x="80" y="92" width="88" height="88"/>
+  <text x="188" y="152" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" font-size="44" fill="#e6eef8">Mitcad</text>
+  <text x="80" y="290" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" font-size="64" fill="#ffffff" letter-spacing="-1.5">Parametric CAD,</text>
+  <text x="80" y="370" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" font-size="64" fill="url(#txt)" letter-spacing="-1.5">free for everyone.</text>
+  <text x="80" y="450" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" fill="#93a4ba">Open source · MIT licence</text>
+  <text x="80" y="490" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" fill="#93a4ba">Windows · Linux · macOS</text>
+  <text x="80" y="560" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#4a9af0">mitcad.org</text>
+
+  <g transform="translate(640 80) scale(1.05)">
+    <ellipse cx="260" cy="250" rx="250" ry="180" fill="url(#g2)"/>
+    <g stroke="#8cc6fa" stroke-opacity=".2" stroke-dasharray="6 6">
+      <line x1="60" y1="415" x2="460" y2="185"/><line x1="60" y1="185" x2="460" y2="415"/>
+    </g>
+    <polygon points="260,120 400,200 260,280 120,200" fill="url(#top)"/>
+    <polygon points="120,200 260,280 260,360 120,280" fill="url(#lft)"/>
+    <polygon points="260,280 400,200 400,280 260,360" fill="url(#rgt)"/>
+    <ellipse cx="260" cy="200" rx="52" ry="30" fill="#2a64b8"/>
+    <ellipse cx="260" cy="222" rx="52" ry="30" fill="#0a1424" clip-path="url(#bore)"/>
+    <g fill="none" stroke="#e6f2ff" stroke-width="1.6" stroke-linejoin="round">
+      <path d="M260 120 L400 200 L260 280 L120 200 Z"/>
+      <path d="M120 200 V280 L260 360 L400 280 V200"/><path d="M260 280 V360"/>
+      <ellipse cx="260" cy="200" rx="52" ry="30"/>
+    </g>
+    <g fill="none" stroke="#8cc6fa" stroke-width="1.1">
+      <path d="M112 214 L112 294 M106 214 h12 M106 294 h12"/>
+      <path d="M276 372 L408 296 M272 366 l8 12 M404 290 l8 12"/>
+    </g>
+    <g fill="#8cc6fa" font-family="DejaVu Sans Mono, monospace" font-weight="bold" font-size="14">
+      <text x="98" y="258" text-anchor="end">40</text><text x="356" y="356">120</text>
+    </g>
+    <g fill="#fff" stroke="#4a9af0" stroke-width="2">
+      <circle cx="260" cy="120" r="4"/><circle cx="400" cy="200" r="4"/>
+      <circle cx="120" cy="200" r="4"/><circle cx="260" cy="280" r="4"/>
+    </g>
+  </g>
+</svg>
