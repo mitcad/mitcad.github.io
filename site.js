@@ -48,6 +48,15 @@
     a.addEventListener("click", function () { if (menu) menu.checked = false; });
   });
 
+  // The demo video: with reduced motion it stays on its poster, with
+  // controls to play it.
+  var demo = document.querySelector("video.demo");
+  if (demo && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    demo.removeAttribute("autoplay");
+    demo.pause();
+    demo.controls = true;
+  }
+
   // Entrance on scroll.
   var items = document.querySelectorAll(".card, .dl, .format-table, .why, .community, .section-head");
   if ("IntersectionObserver" in window &&
